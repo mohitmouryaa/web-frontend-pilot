@@ -1,0 +1,128 @@
+.doctor-text {
+  margin-left: 7rem !important;
+  margin-right: 5rem !important;
+}
+
+.doc-text {
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 0.5rem !important;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.learn-more-btn {
+  border: 1px solid rgb(87, 87, 87);
+  color: #575757;
+  margin-top: 30px;
+}
+
+.learn-more-btn .p-button-label {
+  font-weight: 500;
+}
+
+.heroDivBackGroundImage {
+  background-image: url('./../../public/img/landing-page-background.svg');
+  background-color: #f6f6f6;
+}
+
+.thirdBlock {
+  background-color: #f6f6f6;
+  height: 713px;
+  .thirdBlkHeading {
+    padding-top: 54px;
+    text-align: center;
+    .heading {
+      height: 69px;
+      padding: 0 20px;
+      color: #414141;
+      text-align: center;
+      font-family: 'Noto Sans';
+      font-size: 46px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 64.4px;
+      text-transform: capitalize;
+    }
+    .subHeadingWrapper {
+      display: flex;
+      justify-content: center;
+    }
+    .subHeading {
+      width: 570px;
+      height: 59px;
+      padding: 0 20px;
+      flex-shrink: 0;
+      color: #656565;
+      text-align: center;
+      font-family: 'Noto Sans';
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 140%;
+    }
+    .quoteBlock {
+      .grid {
+        justify-content: center;
+      }
+      .dropShadow {
+        border-radius: 12px;
+        opacity: 0.9;
+        padding: 50px 0;
+        width: 90vw;
+        display: flex;
+        justify-content: center;
+        background-color: #f6f6f6;
+        box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+      }
+      height: 325px;
+      margin-top: 80px;
+      .leftBox {
+        padding-left: 98px;
+      }
+      .rightBox {
+        padding-right: 98px;
+        img {
+          max-width: 100%;
+        }
+      }
+      .quoteIcon {
+        width: 59px;
+        height: 48px;
+      }
+      .quoteBox {
+        margin-top: 10px;
+        text-align: left;
+        color: #6e6e6e;
+        font-family: 'Noto Sans';
+        font-size: 32px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 140%;
+      }
+      .lineBox {
+        text-align: left;
+      }
+      .sign {
+        color: #414141;
+        text-align: left;
+        font-family: 'Noto Sans';
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        text-transform: capitalize;
+        span {
+          display: block;
+          color: #6de5f2;
+          font-family: 'Noto Sans';
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 140%;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+#appointmentModalDialog {
+  .p-dialog-header {
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: lightgray;
+  }
+  #appointmentModalDialog_header {
+    text-align: center;
+  }
+  .p-dialog-header-icons {
+    display: none;
+  }
+  #appointmentModalDialog_content {
+    overflow-y: visible;
+  }
+  .p-highlight {
+    background-color: var(--cyan-300) !important;
+  }
+  #calendar-12h_panel {
+    width: 38vw;
+  }
+}

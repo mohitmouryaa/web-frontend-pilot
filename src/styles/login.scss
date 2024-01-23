@@ -1,0 +1,134 @@
+.login-btn {
+  width: 360px;
+  height: 44px;
+  top: 502px;
+  left: 261px;
+  border-radius: 6px;
+}
+
+.insuranceLabel{
+  position: absolute;
+  left: 10px;
+  color: gray;
+}
+
+.passwordInput {
+  width: 100%;
+  #password {
+    width: 100% !important;
+  }
+  #repeatPassword {
+    width: 100% !important;
+  }
+}
+
+#LoginMainDiv {
+  .loginLabel {
+    width: 300;
+    font-size: 36px;
+    width: 375px;
+  }
+
+  .ladyImage img {
+    width: 80% !important;
+  }
+}
+
+.loginBox {
+  justify-content: center;
+  .firstName{
+    margin-top: 0 !important;
+  }
+  .username{
+    margin-bottom: 2px;
+    margin-top: 30px;
+  }
+  .orLine {
+    text-align: center;
+    font-size: 12px;
+    color: gray;
+  }
+  .signUpLine {
+    text-align: center;
+    color: #595959;
+    font-family: 'Noto Sans';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    text-transform: capitalize;
+  }
+}
+
+#loginSecondDiv {
+  .whatTo {
+    color: #414141;
+    text-align: center;
+    font-family: 'Noto Sans';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 64.4px */
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0;
+  }
+
+  .earlyText {
+    color: #414141;
+    text-align: center;
+    font-family: 'Noto Sans';
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 64.4px */
+    text-transform: capitalize;
+  }
+
+  .communityText {
+    margin: 0;
+    padding: 0;
+    color: #595959;
+    text-align: center;
+    font-family: 'Noto Sans';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%;
+    text-transform: capitalize;
+  }
+
+  .buttons {
+    div {
+      display: flex;
+      width: 176px;
+      height: 40px;
+      flex-direction: column;
+      justify-content: center;
+      flex-shrink: 0;
+      color: #9a9a9a;
+      text-align: center;
+      font-feature-settings: 'clig' off, 'liga' off;
+      font-family: 'Noto Sans';
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 0.28px;
+      text-transform: capitalize;
+      border-radius: 10px;
+      border: 1px solid #dedede;
+      background: #ebebeb;
+      margin: 10px;
+    }
+  }
+}
+
+#phn-dropdown {
+  .p-inputtext {
+    width: min-content;
+  }
+  .p-dropdown-trigger {
+    width: min-content;
+  }
+}

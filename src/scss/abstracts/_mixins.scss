@@ -1,0 +1,24 @@
+@mixin flex-column-scroll {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+@mixin generate-divider($child-number) {
+  .p-datatable {
+    .p-datatable-thead {
+      & tr {
+        & > th {
+          &:nth-child(#{$child-number}) {
+            border-right: 2px solid var(--surface-300) !important;
+          }
+        }
+      }
+    }
+    .p-datatable-tbody > tr {
+      & td:nth-child(#{$child-number}) {
+        border-right: 2px solid var(--surface-300) !important;
+      }
+    }
+  }
+}

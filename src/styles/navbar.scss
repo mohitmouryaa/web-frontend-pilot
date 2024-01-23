@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+#navbar-body {
+  border: none;
+  .p-menubar-root-list {
+    margin-left: 300px;
+  }
+}
+
+.navbar-btn {
+  color: rgba(89, 89, 89, 1);
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+
+.hero-head-tag {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 46px;
+  font-weight: 340;
+  line-height: 64px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.heroDiv {
+  align-items: center;
+  justify-content: center;
+}
+.doctorImage {
+  height: 350px;
+}
+
+#navbar-body .p-menubar-end {
+  margin-left: 0px;
+}

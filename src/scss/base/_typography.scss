@@ -1,0 +1,18 @@
+$font-sizes: (
+  'h1': 1.714rem,
+  'h2': 1.429rem,
+  'h3': 1.286rem,
+  'h4':1.143rem,
+  'h5':1rem,
+  'p':1rem
+);
+
+.typography{
+@each $size, $value in $font-sizes {
+    &--#{$size} {
+      font-size: $value
+    }
+  }
+}
+
+
