@@ -1,5 +1,12 @@
 const sideBarMenu = [
   {
+    label: 'Home',
+    icon: 'pi-video',
+    relativePath: 'doctor',
+    path: 'home',
+    component: 'home',
+  },
+  {
     label: 'Profile',
     icon: ' pi-user',
     relativePath: 'doctor',
@@ -35,18 +42,25 @@ const sideBarMenu = [
     component: 'OrthopedicSpecialists',
   },
   {
-    label: 'Community',
-    icon: 'pi-users',
-    relativePath: 'doctor',
-    path: 'community',
-    component: 'Community',
-  },
-  {
     label: 'Video Call',
     icon: 'pi-video',
     relativePath: 'doctor',
     path: 'call',
     component: 'AppointmentVideoApp',
+  },
+  {
+    label: 'Doctor Profile',
+    icon: 'pi-video',
+    relativePath: 'doctor',
+    path: 'doctor-profile',
+    component: 'DoctorProfileApp',
+  },
+  {
+    label: 'Care Team',
+    icon: 'pi-video',
+    relativePath: 'doctor',
+    path: 'team',
+    component: 'CareTeamApp',
   },
 ];
 
@@ -105,7 +119,7 @@ export const doctorData = {
   name: 'Dr. Alec Clemat',
   gender: 'Female Hybrid',
   languages: 'English/Spanish',
-  speciality: ['Orthopedic Specialist'],
+  speciality: 'Orthopedic Specialist',
   address: 'P 174 Suit 2110 Cypres TX 77024',
   address2: '718 Suite 2101 Wood Landol 77858',
   eduction: 'MBBS',
@@ -114,6 +128,22 @@ export const doctorData = {
   ['Hospital Affiliation']: 'Hoaston Methodist',
   ['Education Training']: 'Baylor College of Medicine Houston Methodist',
   ['In Network Insurance']: 'Gigna, Aetna',
+};
+
+export const doctorProfileData = {
+  name: 'Alec Jay',
+  gender: 'Male',
+  speciality1: 'Sports Medicine',
+  address: 'P 174 Suit 2110 Cypres TX 77024',
+  eduction: 'Baylor College of Medicine',
+  ['Practice Names']: 'Houston Methodist Hospital',
+  ['Hospital Affiliation']: 'Hoaston Methodist',
+  training: 'Baylor College of Medicine',
+  ['In Network Insurance']: 'Cigna',
+  telehealth: 'Yes',
+  ['Hybrid:(Inperson + Telehealth)']: 'Yes',
+  surgery: 'Yes',
+  ['New Patient']: 'Yes',
 };
 
 export { sideBarMenu, phnCodes };

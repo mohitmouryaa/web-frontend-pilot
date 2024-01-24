@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef } from 'react';
 import Navbar from '../common/Navbar';
 import { Image } from 'primereact/image';
 import { InputText } from 'primereact/inputtext';

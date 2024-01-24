@@ -1,0 +1,20 @@
+#doctorRating {
+  .p-rating-icon {
+    color: yellow;
+  }
+  svg {
+    height: 10px;
+    width: auto;
+  }
+}
+
+.profileImageDiv {
+  background-color: #222;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  img {
+    height: 45px;
+    width: auto;
+  }
+}

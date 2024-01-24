@@ -2,14 +2,9 @@ import React from 'react';
 import { columnList, userTableData } from './data';
 import MDataTable from '../../common/DataTable/MDataTable';
 import MDataColumn from '../../common/DataTable/MDataColumn';
-export default function DoctorTable({
-  customColumnBody,
-
-}) {
+export default function DoctorTable({ customColumnBody }) {
   return (
-
     <MDataTable
-    
       showGridlines
       value={userTableData}
       dataKey="id"
@@ -18,11 +13,16 @@ export default function DoctorTable({
       scrollable
       scrollHeight="49vh"
       size="small"
-
     >
       {columnList.map((val, idx) => {
         const {
-          field, showFilterMenu, sortable, header, filter, filterPlaceholder, showClearButton,
+          field,
+          showFilterMenu,
+          sortable,
+          header,
+          filter,
+          filterPlaceholder,
+          showClearButton,
         } = val;
         return (
           <MDataColumn
@@ -42,12 +42,10 @@ export default function DoctorTable({
             filterPlaceholder={filterPlaceholder}
             showClearButton={showClearButton}
             style={{ minWidth: '12rem' }}
-          body={(rowData, data) => customColumnBody(rowData, data)}
+            body={(rowData, data) => customColumnBody(rowData, data)}
           />
         );
       })}
-
     </MDataTable>
-
   );
 }

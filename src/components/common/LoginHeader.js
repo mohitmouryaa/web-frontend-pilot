@@ -5,8 +5,8 @@ export default function LoginHeader({header}) {
    
 return (
         <div className="bg-cyan-100 flex align-items-center px-4 justify-content-between h-6rem">
-            <div className='flex w-5 justify-content-between'>
-            <Image src="img/png/logo.png" alt="Image"  className="mr-2" />
+            <div className='flex w-3 justify-content-between'>
+            <Image src="/img/logo.svg" alt="Image"  className="mr-2" />
             <div className='text-500 text-3xl font-semibold'>
                 {header||"MSK Care Portal"}
             </div>
