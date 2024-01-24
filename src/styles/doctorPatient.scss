@@ -1,0 +1,16 @@
+.doctor-patient-card{
+    width: 40vw;
+    height: auto;
+    .p-card.p-component{
+        border: 1px solid lightgrey;
+    }
+
+    img{
+        height: 100px;
+        width: auto;
+    }
+    .p-card-content{
+        display: flex;
+        justify-content: center;
+    }
+}

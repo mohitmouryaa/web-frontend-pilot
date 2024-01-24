@@ -1,11 +1,72 @@
 import PatientTable from './PatientTable';
 import { InputText } from 'primereact/inputtext';
 import { Button } from 'primereact/button';
+import { Card } from 'primereact/card';
+import { Image } from 'primereact/image';
+import '../../../styles/doctorPatient.scss'
 
 export default function CareTeam() {
   return (
     <div>
       {/* Assistant Photo Block */}
+      <div className='flex-column'>
+        <div className='flex justify-content-around'>
+          <div className="card doctor-patient-card">
+            <Card title="Physician Assistant">
+              <div>
+                <Image src="/img/doctor-patient.svg" width="60" />
+                &#160;
+                &#160;
+                <Image src="/img/doctor-patient.svg" width="60" />
+                &#160;
+                &#160;
+                <Image src="/img/doctor-patient.svg" width="60" />
+              </div>
+            </Card>
+          </div>
+          <div className="card doctor-patient-card">
+            <Card title="Physician Assistant">
+              <div>
+                <Image src="/img/doctor-patient.svg" width="60" />
+                &#160;
+                &#160;
+                <Image src="/img/doctor-patient.svg" width="60" />
+                &#160;
+                &#160;
+                <Image src="/img/doctor-patient.svg" width="60" />
+              </div>
+            </Card>
+          </div>
+        </div>
+        <div className='flex justify-content-around'>
+          <div className="card doctor-patient-card">
+            <Card title="Non Surgical Orthopedic Specialist">
+              <div>
+                <Image src="/img/doctor-patient.svg" width="60" />
+                &#160;
+                &#160;
+                <Image src="/img/doctor-patient.svg" width="60" />
+                &#160;
+                &#160;
+                <Image src="/img/doctor-patient.svg" width="60" />
+              </div>
+            </Card>
+          </div>
+          <div className="card doctor-patient-card">
+            <Card title="Orthopedic Surgeons">
+              <div>
+                <Image src="/img/doctor-patient.svg" width="60" />
+                &#160;
+                &#160;
+                <Image src="/img/doctor-patient.svg" width="60" />
+                &#160;
+                &#160;
+                <Image src="/img/doctor-patient.svg" width="60" />
+              </div>
+            </Card>
+          </div>
+        </div>
+      </div>
       <div></div>
       {/* Middle Buttons */}
       <div>
