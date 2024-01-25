@@ -1,11 +1,10 @@
 import { Menu } from 'primereact/menu';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-export default function MenuContainer({ sideBarMenu, setHeader }) {
+export default function MenuContainer({ sideBarMenu }) {
   const navigate = useNavigate();
   const handleMenuItemClick = ({ event, path }) => {
-    setHeader(event?.item?.label);
-    navigate(path);
+    navigate(path, { state: event?.item?.label });
   };
   // useEffect(() => {
   //   const arr = doctorData.name.split(' ');

@@ -7,6 +7,13 @@ const sideBarMenu = [
     component: 'Dashboard',
   },
   {
+    label: 'Patient Information',
+    icon: 'pi-home',
+    relativePath: 'doctor',
+    path: 'patient-information',
+    component: 'PatientInformation',
+  },
+  {
     label: 'MSK Care Portal',
     icon: 'pi-chart-bar',
     relativePath: 'doctor',

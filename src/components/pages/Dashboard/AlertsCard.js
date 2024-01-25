@@ -1,7 +1,6 @@
 import { Card } from 'primereact/card';
 import React from 'react';
 import { alertCardData } from './data';
-import { Chip } from 'primereact/chip';
 export default function AlertsCard() {
   return (
     <Card

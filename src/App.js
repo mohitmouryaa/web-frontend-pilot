@@ -23,6 +23,9 @@ const CarePortalApp = lazy(() => import('./components/pages/CorePortal'));
 const DoctorProfileApp = lazy(() => import('./components/pages/DoctorProfile'));
 const CareTeamApp = lazy(() => import('./components/pages/CareTeam'));
 const DashboardApp = lazy(() => import('./components/pages/Dashboard'));
+const PatientInformationApp = lazy(() =>
+  import('./components/pages/PatientInformation'),
+);
 const CommunityChat = lazy(() => import('./components/pages/CommunityChat'));
 
 function App() {
@@ -37,6 +40,7 @@ function App() {
     DoctorProfileApp: DoctorProfileApp,
     CareTeamApp: CareTeamApp,
     Dashboard: DashboardApp,
+    PatientInformation: PatientInformationApp,
     CommunityChat: CommunityChat,
   };
 

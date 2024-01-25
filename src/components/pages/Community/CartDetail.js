@@ -1,9 +1,8 @@
-/* eslint-disable import/no-anonymous-default-export */
 import { Avatar } from 'primereact/avatar';
 import { Image } from 'primereact/image';
 import React from 'react';
 
-export default function ({ acitivity, users, topic, bodyPart }) {
+export default function CartDetail({ acitivity, users, topic, bodyPart }) {
   const boxStyle = {
     boxShadow:
       'rgba(20, 137, 149, 0.25) 7px 5px 0px 0px, rgb(133 137 137 / 25%) -3px -2px 5px 0px',

@@ -24,7 +24,7 @@ export default function AnaylistChart() {
     const options = {
       maintainAspectRatio: false,
 
-      aspectRatio: 1,
+      aspectRatio: 0.6,
 
       plugins: {
         legend: {
