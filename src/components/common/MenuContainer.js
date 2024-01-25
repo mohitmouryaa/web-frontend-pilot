@@ -1,22 +1,21 @@
 import { Menu } from 'primereact/menu';
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { doctorData } from '../../utils/constants';
 export default function MenuContainer({ sideBarMenu, setHeader }) {
   const navigate = useNavigate();
   const handleMenuItemClick = ({ event, path }) => {
     setHeader(event?.item?.label);
     navigate(path);
   };
-  useEffect(() => {
-    const arr = doctorData.name.split(' ');
-    const doctorName = arr[0] + ' ' + arr[1];
-    sideBarMenu[0].label = `${doctorName} Profile`;
-    handleMenuItemClick({
-      event: { item: { label: `${doctorName} Profile` } },
-      path: 'profile',
-    });
-  }, []);
+  // useEffect(() => {
+  //   const arr = doctorData.name.split(' ');
+  //   const doctorName = arr[0] + ' ' + arr[1];
+  //   sideBarMenu[0].label = `${doctorName} Profile`;
+  //   handleMenuItemClick({
+  //     event: { item: { label: `${doctorName} Profile` } },
+  //     path: 'profile',
+  //   });
+  // }, []);
   const items = sideBarMenu.map(
     ({ icon, label, path, relativePath }, index) => ({
       label: label,

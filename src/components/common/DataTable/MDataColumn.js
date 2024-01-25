@@ -16,19 +16,20 @@ export default function MDataColumn(props) {
     editor = () => {},
   } = props;
   return (
-    <Column {...{
-      field,
-      showFilterMenu,
-      sortable,
-      header,
-      filter,
-      filterPlaceholder,
-      showClearButton,
-      style,
-      body,
-      editor,
-      ...props,
-    }}
+    <Column
+      {...{
+        field,
+        showFilterMenu,
+        sortable,
+        header,
+        filter,
+        filterPlaceholder,
+        showClearButton,
+        style,
+        body,
+        editor,
+        ...props,
+      }}
     />
   );
 }

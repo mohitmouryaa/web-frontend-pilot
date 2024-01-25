@@ -1,10 +1,17 @@
 const sideBarMenu = [
   {
-    label: 'Home',
-    icon: 'pi-video',
+    label: 'Dashboard',
+    icon: 'pi-home',
     relativePath: 'doctor',
-    path: 'home',
-    component: 'home',
+    path: '',
+    component: 'Dashboard',
+  },
+  {
+    label: 'MSK Care Portal',
+    icon: 'pi-chart-bar',
+    relativePath: 'doctor',
+    path: 'care-portal',
+    component: 'CarePortal',
   },
   {
     label: 'Profile',
@@ -50,17 +57,24 @@ const sideBarMenu = [
   },
   {
     label: 'Doctor Profile',
-    icon: 'pi-video',
+    icon: 'pi-user-plus',
     relativePath: 'doctor',
     path: 'doctor-profile',
     component: 'DoctorProfileApp',
   },
   {
     label: 'Care Team',
-    icon: 'pi-video',
+    icon: 'pi-check-circle',
     relativePath: 'doctor',
     path: 'team',
     component: 'CareTeamApp',
+  },
+  {
+    label: 'Community Chat',
+    icon: 'pi-user-plus',
+    relativePath: 'doctor',
+    path: 'community-chat',
+    component: 'CommunityChat',
   },
 ];
 

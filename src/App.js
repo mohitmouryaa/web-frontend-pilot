@@ -8,6 +8,7 @@ import { sideBarMenu } from './utils/constants';
 import PageNotFound from './components/common/PageNotFound';
 import DefaultComponent from './components/common/DefaultComponent';
 import EmployersForm from './components/pages/EmployersForm';
+
 const AppointmentApp = lazy(() => import('./components/pages/Appointment'));
 const DocumentsApp = lazy(() => import('./components/pages/Documents'));
 const OrthopedicSpecialistApp = lazy(() =>
@@ -21,18 +22,22 @@ const ProfileApp = lazy(() => import('./components/pages/Profile'));
 const CarePortalApp = lazy(() => import('./components/pages/CorePortal'));
 const DoctorProfileApp = lazy(() => import('./components/pages/DoctorProfile'));
 const CareTeamApp = lazy(() => import('./components/pages/CareTeam'));
+const DashboardApp = lazy(() => import('./components/pages/Dashboard'));
+const CommunityChat = lazy(() => import('./components/pages/CommunityChat'));
 
 function App() {
   const routeComponent = {
     Documents: DocumentsApp,
     Community: CommunityApp,
     Appointment: AppointmentApp,
-    home: CarePortalApp,
+    CarePortal: CarePortalApp,
     Profile: ProfileApp,
     OrthopedicSpecialists: OrthopedicSpecialistApp,
     AppointmentVideoApp: AppointmentVideoApp,
     DoctorProfileApp: DoctorProfileApp,
     CareTeamApp: CareTeamApp,
+    Dashboard: DashboardApp,
+    CommunityChat: CommunityChat,
   };
 
   function createRoutes(sideBarMenu) {

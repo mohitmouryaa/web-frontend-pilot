@@ -9,6 +9,7 @@ export default function SideBarContainer() {
   return (
     <div>
       <LoginHeader {...{ header }} />
+      {/* use Toolbar component for header */}
       <div
         className="flex fixed w-full"
         style={{ height: 'calc(100vh - 6rem)' }}

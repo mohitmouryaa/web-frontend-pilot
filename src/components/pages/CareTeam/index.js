@@ -1,70 +1,21 @@
 import PatientTable from './PatientTable';
 import { InputText } from 'primereact/inputtext';
 import { Button } from 'primereact/button';
-import { Card } from 'primereact/card';
-import { Image } from 'primereact/image';
-import '../../../styles/doctorPatient.scss'
+import '../../../styles/doctorPatient.scss';
+import PatientCard from './PatientCard';
 
 export default function CareTeam() {
   return (
     <div>
       {/* Assistant Photo Block */}
-      <div className='flex-column'>
-        <div className='flex justify-content-around'>
-          <div className="card doctor-patient-card">
-            <Card title="Physician Assistant">
-              <div>
-                <Image src="/img/doctor-patient.svg" width="60" />
-                &#160;
-                &#160;
-                <Image src="/img/doctor-patient.svg" width="60" />
-                &#160;
-                &#160;
-                <Image src="/img/doctor-patient.svg" width="60" />
-              </div>
-            </Card>
-          </div>
-          <div className="card doctor-patient-card">
-            <Card title="Physician Assistant">
-              <div>
-                <Image src="/img/doctor-patient.svg" width="60" />
-                &#160;
-                &#160;
-                <Image src="/img/doctor-patient.svg" width="60" />
-                &#160;
-                &#160;
-                <Image src="/img/doctor-patient.svg" width="60" />
-              </div>
-            </Card>
-          </div>
+      <div className="px-12 mx-4 mt-3">
+        <div className="flex justify-content-around">
+          <PatientCard title={'Physician Assitant'} />
+          <PatientCard title={'Physician Assitant'} />
         </div>
-        <div className='flex justify-content-around'>
-          <div className="card doctor-patient-card">
-            <Card title="Non Surgical Orthopedic Specialist">
-              <div>
-                <Image src="/img/doctor-patient.svg" width="60" />
-                &#160;
-                &#160;
-                <Image src="/img/doctor-patient.svg" width="60" />
-                &#160;
-                &#160;
-                <Image src="/img/doctor-patient.svg" width="60" />
-              </div>
-            </Card>
-          </div>
-          <div className="card doctor-patient-card">
-            <Card title="Orthopedic Surgeons">
-              <div>
-                <Image src="/img/doctor-patient.svg" width="60" />
-                &#160;
-                &#160;
-                <Image src="/img/doctor-patient.svg" width="60" />
-                &#160;
-                &#160;
-                <Image src="/img/doctor-patient.svg" width="60" />
-              </div>
-            </Card>
-          </div>
+        <div className="flex justify-content-around">
+          <PatientCard title={'Non Surgical Orthopedic Specialist'} />
+          <PatientCard title={'Orthopedic Surgeons'} />
         </div>
       </div>
       <div></div>
@@ -78,7 +29,7 @@ export default function CareTeam() {
       </div>
       {/* Patient table */}
       <div>
-        <div className="flex justify-content-between align-items-center mb-2">
+        <div className="flex justify-content-between align-items-center mb-2 w-11 ml-6">
           <div
             className="font-semibold text-2xl mb-4"
             style={{ color: '#595959' }}
@@ -90,7 +41,9 @@ export default function CareTeam() {
             <InputText placeholder="Search" />
           </span>
         </div>
-        <PatientTable />
+        <div style={{ width: '70vw', margin: 'auto' }}>
+          <PatientTable />
+        </div>
       </div>
     </div>
   );

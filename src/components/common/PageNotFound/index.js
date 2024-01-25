@@ -27,7 +27,7 @@ function PageNotFound() {
     <div>
       <div className="flex flex-column align-items-center">
         <div className="w-15rem">
-        <Image src="img/svg/pageNotFound.svg" alt="Image" />
+        <Image src="/img/svg/pageNotFound.svg" alt="Image" />
         </div>
         <div className="text-4xl font-bold text-primary">404 Error</div>
         <div className="m-1 mb-2">Page not found</div>

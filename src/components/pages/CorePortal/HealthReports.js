@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Chart } from 'primereact/chart';
 import { Card } from 'primereact/card';
@@ -9,89 +8,88 @@ export default function HealthReports() {
     const [injuryData, setInjuryData] = useState({});
 
     useEffect(() => {
+        
+        const stepsData = [null, null, null, 30];
         const documentStyle = getComputedStyle(document.documentElement);
-        const textColorSecondary = documentStyle.getPropertyValue('--text-color-secondary');
         const surfaceBorder = documentStyle.getPropertyValue('--surface-border');
-        const stepsData = [null,null,null,30];
         const data = {
-            labels:[10,20,30,40,50] ,
+            labels: [10, 20, 30, 40, 50],
             datasets: [
                 {
                     label: '',
-                    borderColor: documentStyle.getPropertyValue('--cyan-300'),
                     tension: 0.4,
+                    data: [10, 20, 5, 26, 5],
+                    borderColor: documentStyle.getPropertyValue('--cyan-300'),
                     backgroundColor: documentStyle.getPropertyValue('--cyan-100'),
-                    data: [10,20,5,26,5]
                 },
-              ]
+            ]
         };
         const injuryDataList = {
-            labels: ["01","02","03","04","05","05","06","07","08","09","10"],
+            labels: ["01", "02", "03", "04", "05", "05", "06", "07", "08", "09", "10"],
             datasets: [
                 {
                     label: '',
-                    borderColor: documentStyle.getPropertyValue('--cyan-300'),
                     tension: 0.4,
+                    data: [10, 20, 5, 26, 5, 7, 9, 6, 3, 7, 9],
+                    borderColor: documentStyle.getPropertyValue('--cyan-300'),
                     backgroundColor: documentStyle.getPropertyValue('--cyan-100'),
-                    data: [10,20,5,26,5,7,9,6,3,7,9]
                 },
                 {
-                    label: 'Steps',
                     type: 'bar',
-                   backgroundColor: documentStyle.getPropertyValue('--cyan-300'),
-                    borderColor: documentStyle.getPropertyValue('--cyan-300'),
+                    label: 'Steps',
                     borderWidth: 1,
-                    barThickness: 30,
-                    borderRadius: 10,
                     data: stepsData,
+                    borderRadius: 10,
+                    barThickness: 30,
+                    borderColor: documentStyle.getPropertyValue('--cyan-300'),
+                    backgroundColor: documentStyle.getPropertyValue('--cyan-300'),
                 },
-              ]
+            ]
         };
         const options = {
             maintainAspectRatio: false,
             aspectRatio: 2,
             plugins: {
                 legend: {
-                   display:false
-                }, 
+                    display: false
+                },
                 title: {
-                    display: true,
-                    text: 'Injury Analysis',
-                    position: 'top',
                     fontSize: 20,
-                  },
+                    display: true,
+                    position: 'top',
+                    text: 'Injury Analysis',
+                },
 
             },
             scales: {
                 x: {
-                 
+
                     grid: {
+                        display: false,
                         color: surfaceBorder,
-                        display:false
                     }
                 },
                 y: {
                     grid: {
+                        display: false,
                         color: surfaceBorder,
-                        display:false
                     }
                 }
             }
         };
-       setInjuryData(injuryDataList)
         setChartData(data);
         setChartOptions(options);
+        setInjuryData(injuryDataList)
     }, []);
 
     return (
         <Card>
-            <Chart type="line" data={injuryData} options={chartOptions} className='mb-6'/>
+            <Chart type="line" data={injuryData} options={chartOptions} className='mb-6' />
             <div className='flex'>
-            <Chart type="line" data={chartData} options={chartOptions} className='flex-1'/>
-            <Chart type="line" data={chartData} options={chartOptions} className='flex-1'/>
+                <Chart type="line" data={chartData} options={chartOptions} className='flex-1' />
+                <Chart type="line" data={chartData} options={chartOptions} className='flex-1' />
             </div>
 
         </Card>
     )
 }
-        

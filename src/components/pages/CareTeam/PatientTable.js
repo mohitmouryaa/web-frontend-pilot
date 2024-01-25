@@ -3,6 +3,9 @@ import { columnList, userTableData } from './data';
 import MDataTable from '../../common/DataTable/MDataTable';
 import MDataColumn from '../../common/DataTable/MDataColumn';
 import { Avatar } from 'primereact/avatar';
+import { Image } from 'primereact/image';
+
+import RecordsIcon from './RecordsIcon';
 
 export default function PatientTable() {
   const customColumnBody = (rowData, data) => {
@@ -11,23 +14,21 @@ export default function PatientTable() {
       case 'records':
         return (
           <div className="flex align-items-center justify-content-center gap-2 mr-3">
-            <i className="pi pi-check" style={{ color: 'green' }}></i>
-            <i className="pi pi-times" style={{ color: 'green' }}></i>
-            <i className="pi pi-search" style={{ color: 'green' }}></i>
-            <i className="pi pi-user" style={{ color: 'green' }}></i>
+            <RecordsIcon icon="pi-plus" />
+            <RecordsIcon icon="pi-search-plus" />
+            <RecordsIcon icon="pi-search-minus" />
+            <RecordsIcon icon="pi-plus" />
           </div>
         );
       case 'coreTeam':
         return (
           <div className="flex align-items-center justify-content-center gap-2 mr-3">
-            <Avatar
-              size="xlarge"
-              image="/img/triple-doctor.svg"
-              shape="circle"
-            />
+            <div className="p-mr-3 p-shadow-2 flex flex-column align-items-center justify-content-center">
+              <Image src="/img/triple-doctor.svg" width="120" />
+            </div>
           </div>
         );
-      case 'season':
+      case 'carelevel':
         return (
           <div className="flex align-items-center justify-content-center gap-2 mr-3">
             <Avatar
@@ -49,8 +50,6 @@ export default function PatientTable() {
       dataKey="id"
       paginator={false}
       lazy
-      // scrollable
-      // scrollHeight="49vh"
       size="small"
     >
       {columnList.map((val, idx) => {
@@ -79,7 +78,6 @@ export default function PatientTable() {
             filter={filter}
             filterPlaceholder={filterPlaceholder}
             showClearButton={showClearButton}
-            style={{ minWidth: '12rem' }}
             body={(rowData, data) => customColumnBody(rowData, data)}
           />
         );

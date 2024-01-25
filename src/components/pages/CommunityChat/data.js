@@ -1,0 +1,86 @@
+export const chats = [
+  {
+    name: 'John Deo',
+    role: 'Spine Surgeon',
+    img: 'chat-profile.svg',
+  },
+  {
+    name: 'Rajesh',
+    role: 'Director',
+    img: 'chat-profile.svg',
+    badge: '5',
+  },
+  {
+    name: 'Jacob Ryan',
+    role: 'Ortho Surgeon',
+    img: 'chat-profile.svg',
+  },
+  {
+    name: 'Kehn Anderson',
+    role: 'CEO',
+    img: 'chat-profile.svg',
+    badge: '8',
+  },
+  {
+    name: 'Sarah Smith',
+    role: 'Anaesthetics ',
+    img: 'chat-profile.svg',
+  },
+  {
+    name: 'Vlad Cardella',
+    role: 'Cardiologist',
+    img: 'chat-profile.svg',
+  },
+  {
+    name: 'Jennifer Maklen',
+    role: 'Nurse',
+    img: 'chat-profile.svg',
+    badge: '4',
+    lastSeen: true,
+  },
+  {
+    name: 'Lina Smith',
+    role: 'Ortho Surgeon',
+    img: 'chat-profile.svg',
+    lastSeen: true,
+  },
+  {
+    name: 'Jeff Adam',
+    role: 'Compounder',
+    img: 'chat-profile.svg',
+    badge: '9',
+    lastSeen: true,
+  },
+  {
+    name: 'Anjelina Cardella',
+    role: 'Physiotherapist',
+    img: 'chat-profile.svg',
+    lastSeen: true,
+  },
+  {
+    name: 'Jennifer Maklen',
+    role: 'Nurse',
+    img: 'chat-profile.svg',
+    badge: '4',
+    lastSeen: true,
+  },
+  {
+    name: 'Lina Smith',
+    role: 'Ortho Surgeon',
+    img: 'chat-profile.svg',
+    lastSeen: true,
+  },
+  {
+    name: 'Jeff Adam',
+    role: 'Compounder',
+    img: 'chat-profile.svg',
+    badge: '9',
+    lastSeen: true,
+  },
+  {
+    name: 'Anjelina Cardella',
+    role: 'Physiotherapist',
+    img: 'chat-profile.svg',
+    lastSeen: true,
+  },
+];
