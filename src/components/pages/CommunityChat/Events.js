@@ -10,10 +10,13 @@ export default function Events() {
         <div className="flex-1 font-bold text-center p-4 ">
           <div className="p-mr-3 p-shadow-2 flex flex-column align-items-center justify-content-center">
             <Image src="/img/20-attending.svg" width="100" />
-            <div className="mt-2 font-semibold" style={{ color: '#595959' }}>
+            <div className="mt-2 font-bold" style={{ color: '#595959' }}>
               20 Attending
             </div>
-            <div className="flex flex-wrap max-w-min mt-2 font-medium">
+            <div
+              className="flex flex-wrap max-w-min mt-2 font-medium"
+              style={{ color: '#595959' }}
+            >
               AAOS Conference
             </div>
           </div>
@@ -21,10 +24,13 @@ export default function Events() {
         <div className="flex-1 font-bold text-center p-4  mx-4">
           <div className="p-mr-3 p-shadow-2 flex flex-column align-items-center justify-content-center">
             <Image src="/img/40-attending.svg" width="100" />
-            <div className="mt-2 font-semibold" style={{ color: '#595959' }}>
+            <div className="mt-2 font-bold" style={{ color: '#595959' }}>
               40 Attending
             </div>
-            <div className="flex flex-wrap max-w-min mt-2 font-medium">
+            <div
+              className="flex flex-wrap max-w-min mt-2 font-medium"
+              style={{ color: '#595959' }}
+            >
               CMA Conference
             </div>
           </div>
@@ -32,10 +38,13 @@ export default function Events() {
         <div className="flex-1 font-bold text-center p-4 ">
           <div className="p-mr-3 p-shadow-2 flex flex-column align-items-center justify-content-center">
             <Image src="/img/65-attending.svg" width="100" />
-            <div className="mt-2 font-semibold" style={{ color: '#595959' }}>
+            <div className="mt-2 font-bold" style={{ color: '#595959' }}>
               65 Attending
             </div>
-            <div className="flex flex-wrap max-w-min mt-2 font-medium">
+            <div
+              className="flex flex-wrap max-w-min mt-2 font-medium"
+              style={{ color: '#595959' }}
+            >
               NIH Conference
             </div>
           </div>
